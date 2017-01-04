@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rspotify', '1.19.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
