@@ -56,6 +56,10 @@ GEM
     execjs (2.7.0)
     faraday (0.10.1)
       multipart-post (>= 1.2, < 3)
+    forecast_io (2.0.1)
+      faraday
+      hashie
+      multi_json
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.4.6)
@@ -177,6 +181,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  forecast_io
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.2)

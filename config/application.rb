@@ -3,8 +3,10 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 require 'rspotify'
+require 'forecast_io'
 
 RSpotify::authenticate(ENV['SPOTIFY_CLIENT_ID'], ENV['SPOTIFY_CLIENT_SECRET'])
+ForecastIO.api_key = ENV['FORECAST_CLIENT_ID']
 
 
 # Require the gems listed in Gemfile, including any gems
