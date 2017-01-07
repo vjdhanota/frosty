@@ -2,7 +2,7 @@
 class HomeController < ApplicationController
   require 'forecast_io'
   require 'omniauth'
-  before_action :set_playlist, only: [:index]
+  before_action :set_playlist, only: [:index, :save]
 
   def index
   	@summary = set_weather.currently.icon
@@ -17,9 +17,11 @@ class HomeController < ApplicationController
 	ForecastIO.forecast(37.3382, -121.8863)
   end
 
-
   def set_playlist
   	#Verify that we have current_user 
+  	if params.has_key?(:save)
+
+  	end
   	if params.has_key?("RSpotify::User")
 
 	  	hash = params["RSpotify::User"][:hash]

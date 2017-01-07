@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
   post 'home/index'
+  post 'home/save'
 
   #get 'welcome/index'
 
