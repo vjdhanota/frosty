@@ -1,0 +1,11 @@
+<%= form_for RSpotify::User.name, :url => home_index_path, :html => {:id => "hashForm"} do |f|%>
+	<%= f.hidden_field :hash, :value => @hash %>
+<%end%>
+
+<h3>Generating playlist...</h3>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("#hashForm").submit();
+});
+</script>
