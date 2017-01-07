@@ -1,10 +1,7 @@
-<h1>Home</h1>
 <%= button_to 'Sign out', 'https://www.spotify.com/logout/', method: :get%>
+
 <h1><%= @summary %></h1>
-
 <h1><%= @selected_list.name %></h1>
-<h1><%= @embed_link %></h1>
 
-
-<iframe src=<%=@embed_link%> width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<iframe src=<%=@embed_link%> width="350" height="475" frameborder="0" allowtransparency="true"></iframe>
 
